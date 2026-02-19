@@ -12,27 +12,32 @@ The dataset includes critical academic indicators:
 - **Class Participation:** Engagement level during lessons.
 - **Total Score (Target):** The predicted exam outcome.
 
-## 🛠️ Tech Stack
-- **Languages:** Python (Google Colab)
-- **Data Libraries:** Pandas, NumPy
-- **Visualization:** Matplotlib, Seaborn
-- **Machine Learning:** Scikit-learn (Linear Regression, Random Forest)
-- **Deep Learning:** TensorFlow/Keras (Neural Networks)
+## 🛠️ Tech Stack & Architecture
+- **Environment:** Google Colab / Python 3.x
+- **Data Science:** Pandas, NumPy, Scikit-learn
+- **Visualization:** Seaborn, Matplotlib
+- **Deep Learning:** TensorFlow & Keras
+- **Model Deployment (Coming Soon):** Streamlit Web Dashboard
 
-## 📈 Methodology & Models
-We implemented a multi-model approach to find the most accurate predictor:
-1. **Linear Regression:** Baseline model for linear relationships.
-2. **Random Forest Regressor:** For handling non-linear patterns and better accuracy.
-3. **Neural Networks (Deep Learning):** A multi-layer perceptron (MLP) to explore complex data patterns.
+## 📈 Performance Comparison
+After training on 800,000 records, the models achieved the following R2 Scores (Accuracy):
 
-## 🚀 Key Results (Current Progress)
-- **Data Cleaning:** 100% processed with zero missing values.
-- **Initial Baseline (Linear Regression):** Achieved an **R2 Score of 0.66**.
-- **Model Comparison:** Currently training advanced models to push accuracy above 85%.
+| Model | Algorithm Type | R2 Score |
+| :--- | :--- | :--- |
+| **Linear Regression** | Simple ML | 0.66 |
+| **Random Forest** | Advanced Ensemble ML | 0.67 |
+| **Neural Network** | **Deep Learning (ANN)** | **0.71** |
+
+> **Finding:** The Deep Learning model outperformed traditional ML methods, effectively capturing non-linear patterns in student data.
 
 ## 📂 Repository Structure
 ```text
-├── data/                  # Student performance dataset
-├── notebooks/             # Google Colab notebooks
-├── results/               # Comparative graphs and metrics
-└── README.md              # Project documentation
+├── models/
+│   ├── linear_model.pkl          # Saved Linear Regression
+│   ├── random_forest_model.pkl   # Saved Random Forest
+│   └── neural_network_model.keras # Saved Deep Learning Model
+├── notebooks/
+│   └── student_analysis.ipynb    # Main development notebook
+├── data/
+│   └── student_performance.csv   # Dataset (1M Records)
+└── README.md
