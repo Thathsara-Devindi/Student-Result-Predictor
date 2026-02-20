@@ -20,7 +20,7 @@ The dataset includes critical academic indicators:
 - **Data Science:** Pandas, NumPy, Scikit-learn
 - **Visualization:** Seaborn, Matplotlib
 - **Deep Learning:** TensorFlow & Keras
-- **Model Deployment (Coming Soon):** Streamlit Web Dashboard
+- **Model Deployment:** Streamlit Web Dashboard
 
 ## 📈 Performance Comparison
 After training on 800,000 records, the models achieved the following R2 Scores (Accuracy):
