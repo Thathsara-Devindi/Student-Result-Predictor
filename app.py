@@ -10,7 +10,7 @@ st.write("Enter the details below to predict the student's total score.")
 # Model eka load karamu (Oya download karapu .keras file eke nama meeta samana wenna ona)
 @st.cache_resource
 def load_my_model():
-    return load_model('neural_network_model.keras')
+    return tf.keras.models.load_model('neural_network_model.keras', compile=False)
 
 model = load_my_model()
 
