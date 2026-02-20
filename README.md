@@ -5,6 +5,9 @@ As a Final Year Computer Science & AI student, this project was developed to exp
 ## 🌟 Project Overview
 This project analyzes a massive dataset of **1 million student records** to predict a student's `Total Score`. The goal is to move beyond simple regression and compare traditional ML algorithms with Deep Learning architectures.
 
+## 🚀 Live Demo
+[https://student-result-predictor-gkm4gx4fqbsdwu6pnsmxvb.streamlit.app/]
+
 ## 📊 Dataset Features
 The dataset includes critical academic indicators:
 - **Weekly Self-Study Hours:** Time spent studying outside of class.
@@ -17,7 +20,7 @@ The dataset includes critical academic indicators:
 - **Data Science:** Pandas, NumPy, Scikit-learn
 - **Visualization:** Seaborn, Matplotlib
 - **Deep Learning:** TensorFlow & Keras
-- **Model Deployment (Coming Soon):** Streamlit Web Dashboard
+- **Model Deployment:** Streamlit Web Dashboard
 
 ## 📈 Performance Comparison
 After training on 800,000 records, the models achieved the following R2 Scores (Accuracy):
