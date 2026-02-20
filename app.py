@@ -24,9 +24,15 @@ if st.button("Predict Score"):
     # Data tika AI ekata galapena format ekata hadamu
     input_data = np.array([[hours, attendance, participation]])
     
-    # Prediction eka gannawa
+    # app.py file eke prediction line ekata yata mehema danna
     prediction = model.predict(input_data)
     final_score = prediction[0][0]
+
+# Score eka 0 saha 100 athara vitarak thiyaganna meka danna
+    final_score = np.clip(final_score, 0, 100) 
+
+# Result eka pennanawa
+    st.success(f"The predicted Total Score is: {final_score:.2f}%")
     
     # Result eka pennanawa
     st.success(f"The predicted Total Score is: {final_score:.2f}%")
