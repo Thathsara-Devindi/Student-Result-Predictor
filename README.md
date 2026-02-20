@@ -6,7 +6,7 @@ As a Final Year Computer Science & AI student, this project was developed to exp
 This project analyzes a massive dataset of **1 million student records** to predict a student's `Total Score`. The goal is to move beyond simple regression and compare traditional ML algorithms with Deep Learning architectures.
 
 ## 🚀 Live Demo
-[(http://localhost:8501/)]
+[https://student-result-predictor-gkm4gx4fqbsdwu6pnsmxvb.streamlit.app/]
 
 ## 📊 Dataset Features
 The dataset includes critical academic indicators:
