@@ -7,31 +7,31 @@ from tensorflow.keras.models import load_model
 st.title("🎓 Student Success Predictor")
 st.write("Enter the details below to predict the student's total score.")
 
-# Model eka load karamu (Oya download karapu .keras file eke nama meeta samana wenna ona)
+# Model load  
 @st.cache_resource
 def load_my_model():
     return tf.keras.models.load_model('neural_network_model.keras', compile=False)
 
 model = load_my_model()
 
-# User input ganna than (Sliders)
+# User input(Sliders)
 hours = st.slider("Weekly Self-Study Hours", 0, 50, 20)
 attendance = st.slider("Attendance Percentage", 0, 100, 85)
 participation = st.slider("Class Participation (1-10)", 1, 10, 5)
 
 # Predict button
 if st.button("Predict Score"):
-    # Data tika AI ekata galapena format ekata hadamu
+    # Data format 
     input_data = np.array([[hours, attendance, participation]])
     
-    # Prediction eka gannawa
+    # Prediction 
     prediction = model.predict(input_data)
     final_score = prediction[0][0]
     
-    # Result eka pennanawa
+    # Result 
     st.success(f"The predicted Total Score is: {final_score:.2f}%")
     
-    # Score eka anuwa podi message ekak
+    # Score  message 
     if final_score > 75:
         st.balloons()
         st.write("Excellent! This student is likely to pass with flying colors.")
